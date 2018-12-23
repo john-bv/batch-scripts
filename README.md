@@ -1,8 +1,8 @@
 ## batch-scripts
-> Useful batch script programs for Windows 7, 8 and 10.
-<br />
-Created and Developed by Olybear9
-<br />
+> Useful batch script programs for Windows 7, 8 and 10.<br />
+
+
+Created and Developed by Olybear9<br />
 [Click Here](https://github.com/Olybear9/batch-scripts/tree/master/projects) for our projects.
 
 # Notice
