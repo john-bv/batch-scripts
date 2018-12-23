@@ -3,8 +3,8 @@
 **Author:** Olybear9 <br />
 **Download:** [Click Here](https://olybear9.github.io/batch-scripts/projects/Remove%20One%20Drive/Remove%20One%20Drive.bat)<br />
 **Size:** `4 kilobytes`<br />
-**Compatibilty:** Windows 10
-**Permissions:** `Owner of Windows Drive`, `Administartor`
+**Compatibilty:** Windows 10 <br />
+**Permissions:** [`Owner of Windows Drive`](https://www.windowscentral.com/how-take-ownership-files-and-folders-windows-10), [`Administartor`](http://www.trusteer.com/en/support/what-admin-mode-windows)
 <br />
 
 # Cache Clearer
@@ -12,5 +12,5 @@
 **Author:** Olybear9 <br />
 **Download:** [Click Here](https://olybear9.github.io/batch-scripts/projects/Cache%20Clear/Cache%20Clearer.bat)<br />
 **Size:** `6 kilobytes`<br />
-**Compatibilty:** Windows 10, 8, and 7
-**Permissions:** `Administrator`
+**Compatibilty:** Windows 10, 8, and 7 <br />
+**Permissions:** [`Administrator`](http://www.trusteer.com/en/support/what-admin-mode-windows)
