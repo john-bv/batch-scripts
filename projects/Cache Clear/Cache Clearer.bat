@@ -95,6 +95,7 @@ cls
 title Configuring Cache Clear
 set /p rmwin=Would you like to remove old windows? [y/n] 
 set /p rmsftdir=Would you like to remove windows update cache? [y/n] 
+set /p rmauto=Would you like to remove program history? (OWNER OF CDRIVE IS REQUIRED) [y/n] 
 echo Press any key to continue.
 pause > nul
 cls
@@ -173,8 +174,32 @@ if %errorlevel% == 1 (
     set /A amount=amount+1
     echo Temporary storage deleted sucessfully.
 )
+
+if "%rmauto%" == "y" (
+    del /q %windir%\Prefetch\*
+    if %errorlevel% == 1 (
+        echo Program history removal failed.
+    ) else (
+        set /A amount=amount+1
+        echo Program history removed successfully.
+    )
+) else if "%rmsftdir%" == "yes" (
+    del /q %windir%\Prefetch\*
+    if %errorlevel% == 1 (
+        echo Program history removal failed.
+    ) else (
+        set /A amount=amount+1
+        echo Program history removed successfully.
+    )
+) else (
+    echo User chose to decline removal of program history cache.
+)
+timout /t 3 > nul
 echo.
-echo Cleared %amount% of 4 cache areas!
+echo Flushing DNS...
+ipconfig/flushDNS > nul
+echo.
+echo Cleared %amount% of 5 cache areas!
 echo Proceeding in 3 seconds.
 timeout /t 3 > nul
 cls
