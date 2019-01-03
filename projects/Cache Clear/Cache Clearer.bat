@@ -194,7 +194,7 @@ if "%rmauto%" == "y" (
 ) else (
     echo User chose to decline removal of program history cache.
 )
-timout /t 3 > nul
+timeout /t 3 > nul
 echo.
 echo Flushing DNS...
 ipconfig/flushDNS > nul
